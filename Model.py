@@ -1,9 +1,17 @@
+from collections import Counter
+
 from textblob import TextBlob
+
 
 
 # from language_tool_python import LanguageTool
 # from language_tool_python import LanguageTool
 # import GingerIt
+
+
+class WordCountResponse:
+    def __init__(self, count):
+        self.count = count
 
 class SpellCheckerModule:
     def __init__(self):
@@ -21,20 +29,18 @@ class SpellCheckerModule:
         return " ".join(corrected_words)
        # model = SpellCheckerModule
 
-    # def correct_grammar(self,text):
-    #     matches = self.grammar_check.check(text)
-
-    #     foundmistakes = []
-    #     for error in matches['corrections']:
-    #         foundmistakes.append(error['text'])
-    #     foundmistakes_count = len(foundmistakes)
-    #     return foundmistakes,foundmistakes_count
+    # class WordCountResponse:
+    #     def __init__(self, count):
+    #         self.count = count
 
 
-if __name__ == "__main__":
-    obj = SpellCheckerModule()
-    message = "Hello, subscride, to my chanel"
-    print(obj.correct_spell(message))
+
+
+
+# if __name__ == "__main__":
+#     obj = SpellCheckerModule()
+#     message = "Hello, subscride, to my chanel"
+#     print(obj.correct_spell(message))
 
 # print(obj.correct_grammar(message))
 

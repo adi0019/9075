@@ -1,4 +1,8 @@
 Flask~=3.0.1
 textblob~=0.17.1
-gunicorn
+tqdm==4.66.2
+Werkzeug==3.0.2
+wordcount==1.0
+
+#gunicorn
 setuptools~=68.2.0
